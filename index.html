@@ -15,31 +15,60 @@
     <title>parkCanada.ca</title>
   </head>
   <body>
-    <header id="pageHeader">
-      <div id="headerContainer">
-        <div>
+    <section id="pageHeader">
+      <div id="homePageContainer">
+        <header id="headerTop">
           <p>Park<span>Canada</span>.ca</p>
-          <img src="/src/images/burgerMenu.png" alt="burger-menu-icon" />
-        </div>
+          <ul id="headerNavList">
+            <li>Destination</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+          <ul id="headerNavList-mobile">
+            <li>Destination</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+          <img src="/src/images/burgerMenu.png" alt="burger-menu-icon" class="burger-icon" />
+          <img src="/src/images/closeMenu.png" alt="close-menu-icon" class="close-icon btnSwitch" />
+        </header>
         <div id="homePageTitle">
           <p>Calgary Alberta</p>
-          <h1>Banff National Park</h1>
-          <p>Nestled in the Canadian Rockies, Banff National Park is a UNESCO World Heritage Site and Canada's oldest national park.</p>
-        </div>
-        <hr />
-        <div>
-          <div id="homePageBottom">
-            <span>Exploration</span>
-            <span>Adventure</span>
-            <span>Experience</span>
-          </div>
           <div>
-            <img src="/src/images/social media icon FB.png" alt="facebook-icon" />
-            <img src="/src/images/social media icon Twitter.png" alt="twitter-icon" />
+            <h1><span>Banff</span><span>National</span> <span>Park</span></h1>
+            <p>Nestled in the Canadian Rockies, Banff National Park is a UNESCO World Heritage Site and Canada's oldest national park.</p>
+          </div>
+        </div>
+        <div id="user-comment-section">
+          <img src="/src/images/leftBtn.png" alt="" class="left-right-btn" />
+          <div id="user-comment-one" class="user-content">
+            <img src="/src/images/User-1.png" alt="" class="homgpageUser" />
+            <p>Whether you're an adventure seeker or simply looking for a peaceful escape, Banff has it all.</p>
+          </div>
+          <div id="user-comment-two" class="user-content">
+            <img src="/src/images/User-2.png" alt="" class="homgpageUser" />
+            <p>Absolutely stunning! The rugged beauty of Banff National Park never ceases to amaze me.</p>
+          </div>
+          <img src="/src/images/rightBtn.png" alt="" class="left-right-btn" />
+        </div>
+        <div id="homePageBottom">
+          <hr id="vertical-line" />
+          <div id="homePageBottom-items">
+            <div id="slogan">
+              <span>Exploration</span>
+              <span>Adventure</span>
+              <span>Experience</span>
+            </div>
+            <div id="social-icon">
+              <img src="/src/images/social media icon FB.png" alt="facebook-icon" />
+              <img src="/src/images/social media icon Twitter.png" alt="twitter-icon" />
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <main class="container">
       <section id="destination"></section>
       <section id="services"></section>
