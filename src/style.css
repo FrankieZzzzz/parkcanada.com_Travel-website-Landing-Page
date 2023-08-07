@@ -188,7 +188,11 @@
     #headerNavList-mobile{
         display: none;
     }
-    #burger-icon {
+    .burger-icon,
+    .close-icon {
+        display: none;
+    }
+    .btnSwitch {
         display: none;
     }
     /* home page content */
