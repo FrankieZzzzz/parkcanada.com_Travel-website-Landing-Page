@@ -19,20 +19,22 @@
       <div id="homePageContainer">
         <header id="headerTop">
           <p>Park<span>Canada</span>.ca</p>
-          <ul id="headerNavList">
-            <li>Destination</li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+          <ul class="headerNavList">
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
-          <ul id="headerNavList-mobile">
-            <li>Destination</li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Contact</li>
-          </ul>
-          <img src="/src/images/burgerMenu.png" alt="burger-menu-icon" class="burger-icon" />
-          <img src="/src/images/closeMenu.png" alt="close-menu-icon" class="close-icon btnSwitch" />
+          <div class="headerNavList-mobile">
+            <ul>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <img src="/src/images/burgerMenu.png" alt="burger-menu-icon" id="burger-icon" />
+          <img src="/src/images/closeMenu.png" alt="close-menu-icon" id="close-icon" />
         </header>
         <div id="homePageTitle">
           <p>Calgary Alberta</p>
@@ -54,7 +56,7 @@
           <img src="/src/images/rightBtn.png" alt="" class="left-right-btn" />
         </div>
         <div id="homePageBottom">
-          <hr id="vertical-line" />
+          <div class="vertical-line"></div>
           <div id="homePageBottom-items">
             <div id="slogan">
               <span>Exploration</span>
@@ -76,5 +78,6 @@
       <section id="contact"></section>
     </main>
     <footer></footer>
+    <script src="/src/js.js"></script>
   </body>
 </html>
