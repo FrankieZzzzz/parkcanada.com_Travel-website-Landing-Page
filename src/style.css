@@ -35,13 +35,15 @@
     justify-content: space-between;
     align-items: center;
 }
-#headerTop p{
+#headerTop p,
+#webpageLogo{
     font-size: 16px;
     font-family: var(--notoSans);
     font-weight: bold;
     color: var(--general-font-color);
 }
-#headerTop p span{
+#headerTop p span,
+#webpageLogo span{
     color: var(--themeColor);
 }
 .headerNavList {
@@ -202,6 +204,64 @@
     width: 25px;
     height: 25px;
 }
+
+
+
+
+
+
+
+/* footer */
+footer{
+    background-image: url(/src/images/footerImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 44vh;
+}
+#footerContainer{
+    padding: 39px 52px 20px 42px;
+    font-family: var(--notoSans);
+    color: var(--general-font-color);
+}
+#webpageLogo{
+    padding-bottom: 5%;
+}
+#footerTextContent{
+    font-size: 11px;
+    line-height: 168%;
+    width: 82%;
+    padding-bottom: 10%;
+}
+#followUs span {
+    display: inline-block;
+    padding-right: 5%;
+    font-size: 12px;
+}
+
+#followUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#footerBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10%;
+    font-family: var(--notoSans);
+}
+#footerBottom ul li{
+    font-size: 11px;
+    padding-bottom: 8%;
+}
+#footerBottom ul li:nth-child(1){
+    font-size: 14px;
+    padding-bottom: 12%;
+}
+
+
+
+
+
 @media (min-width:600px) {
     #pageHeader {
         background-image: url(../src/images/Bg\ image-window.png);
@@ -306,4 +366,44 @@
         width: 38px;
         height: 38px;
     }
+
+    /* footer */
+    footer{
+        background-image: url(/src/images/footerImage-windowsize.png);
+        height: 35vh;
+    }
+    #footerContainer {
+        padding: 59px 0px 20px 0px;
+        display: grid;
+        grid-template-columns: 5fr 3fr ;
+        width: 78%;
+        margin: 0px auto;
+    }
+   
+    #webpageLogo {
+        padding-bottom: 5%;
+        font-size: 28px;
+    }
+    
+    #footerTextContent {
+        font-size: 16px;
+        width: 42%;
+        padding-bottom: 5%;
+    }
+    
+    #followUs span {
+        font-size: 24px;
+    }
+    #footerBottom {
+        padding-top: 2%;
+    }
+    
+    #footerBottom ul li {
+        font-size: 18px;
+    }
+
+    #footerBottom ul li:nth-child(1) {
+        font-size: 24px;
+    }
+
 }
