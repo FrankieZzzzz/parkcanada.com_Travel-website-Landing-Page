@@ -205,6 +205,7 @@
     height: 25px;
 }
 /* main section */
+/* *********************** */
 /* 1. Destination */
 #mainContainer{
     width: 100%;
@@ -220,7 +221,7 @@
     font-family: var(--notoSans);
 }
 .destination-box h4,
-.services-box-2 h4{
+.services-box h4{
     font-size: 14px;
     font-family: var(--notoSans);
     margin-bottom: 45px;
@@ -282,16 +283,46 @@
     color: var(--themeColor);
     padding-right: 2px;
 }
+/* *********************** */
 /* services section */
 #services{
     padding: 48px 0px 20px 0px;
     background: #F8F8F8;
 }
-.card-box-2{
+.services-box{
     width: 80%;
     margin: 0px auto;
 }
+.services-container{
+    margin-top: 38px;
+    font-family: var(--notoSans);
+}
+.services-list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 22px;
+    row-gap: 3vh;
+    align-items: center;
+}
+.services-img-list{
+    display: none;
+}
+.services-list div img{
+    width: 80px;
+    height: auto;
+}
+.services-list h5{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--themeColor);
+    padding-bottom: 7px;
 
+}
+.services-list p{
+    font-size: 11px;
+    line-height: normal;
+}
 
 
 
@@ -353,12 +384,12 @@ footer{
         background-image: url(../src/images/Bg\ image-window.png);
     }
     #homePageContainer {
-        padding: 50px 0px 30px 0px;
+        padding: 50px 0px 0px 0px;
         margin: 0px auto;
     }
     /* home page header */
         #headerTop{
-        width: 70%;
+        width: 75%;
         margin: 0px auto;
         }
     #headerTop p {
@@ -442,7 +473,7 @@ footer{
         height: 52px;
     }
     #homePageBottom {
-        width: 74%;
+        width: 76%;
         margin: 4vh auto 0px auto;
     }
     .vertical-line {
@@ -476,7 +507,7 @@ footer{
         font-size: 26px;
     }
     .destination-box h4,
-    .services-box-2 h4 {
+    .services-box h4 {
         font-size: 18px;
     }
     .destination-text-content {
@@ -520,6 +551,70 @@ footer{
             width: 80%;
             margin: 0px auto;
         }
+
+
+
+                /* *********************** */
+                /* services section */
+                #services {
+                    padding: 48px 0px 20px 0px;
+                    background: #F8F8F8;
+                }
+                .services-box {
+                    width: 80%;
+                    margin: 0px auto;
+                }
+                .services-container {
+                    margin: 38px 0px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 8%;
+                }
+                .services-list {
+                    display: grid;
+                    grid-template-columns: 1fr 4fr;
+                    grid-template-rows: auto auto auto;
+                    column-gap: 22px;
+                    row-gap: 3vh;
+                    align-items: center;
+                }
+                .services-img-list {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                .services-img-list li{
+                    box-sizing: border-box;
+                    padding: 0px 5px;
+                }
+                .services-img-list li:nth-child(1){
+                    margin-top: 25%;
+                }
+                .services-img-list li:nth-child(2){
+                    margin-bottom: 9%;
+                }
+                .services-img-list li:nth-child(3){
+                    margin-top: 10%;
+                }
+                .services-img-list li img{
+                    box-shadow: 3px 3px 22px 0px rgba(0, 0, 0, 0.12);
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+                .services-list div img {
+                    width: 110px;
+                    height: auto;
+                }
+                .services-list h5 {
+                    font-size: 18px;
+                    padding-bottom: 12px;
+                }
+                .services-list p {
+                    width: 90%;
+                    line-height: 164.7%;
+                    font-size: 14px;
+                }
     /* footer */
     footer{
         background-image: url(/src/images/footerImage-windowsize.png);
