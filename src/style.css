@@ -15,6 +15,9 @@
     --homepage-title-window: 6.5vw;
     --headerList-fontsize: 0.9vw;
 }
+.section-padding{
+    padding: 48px 0px 48px 0px;
+}
 /* mobile first */
 #pageHeader{
     width: 100vw;
@@ -23,7 +26,6 @@
     background-size: cover;
 }
 #homePageContainer{
-    /* height: 100%; */
     padding: 29px 42px 29px 42px;
     display: flex;
     flex-direction: column;
@@ -179,6 +181,7 @@
     border-top: 0.7px solid grey;
     opacity: 0.6;
     padding-bottom: 5%;
+    margin-bottom: 15px;
 }
 #homePageBottom{
     margin-top: 3vh;
@@ -206,28 +209,35 @@
 }
 /* main section */
 /* *********************** */
+.grid{
+    display: grid;
+}
 /* 1. Destination */
 #mainContainer{
     width: 100%;
 }
-#destination{
+#destination,
+.services-box,
+#gallery,
+#gallery-user-container,
+#contact{
     max-width: 80%;
     margin: 0px auto;
-    padding: 48px 0px 45px 0px;
 }
-.card-box{
+.destination-box{
     width: 100%;
     height: auto;
     font-family: var(--notoSans);
 }
 .destination-box h4,
 .services-box h4,
-.gallery-box h4{
+.gallery-box h4,
+.contact-box h4{
     font-size: 14px;
     font-family: var(--notoSans);
     margin-bottom: 45px;
 }
-.destination-text-content{
+.text-content{
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -235,12 +245,8 @@
     font-family: var(--Garamond);
     margin-bottom: 39px;
 }
-.card-box .vertical-line{
-    margin-bottom: 40px;
-}
 /* card content */
 .destination-card-container{
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 40px;
@@ -249,13 +255,11 @@
 .destination-card{
     border-radius: 12px;
     box-shadow: 3px 3px 22px rgba(0, 0, 0, 0.103);
-    /* margin-bottom: 40px; */
 }
 .destination-card img{  
     width: 100%;
 }
 .destination-card-content{
-    display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr;
     padding: 20px 25px 15px 20px;
@@ -287,19 +291,13 @@
 /* *********************** */
 /* services section */
 #services{
-    padding: 48px 0px 20px 0px;
     background: #F8F8F8;
-}
-.services-box{
-    width: 80%;
-    margin: 0px auto;
 }
 .services-container{
     margin-top: 38px;
     font-family: var(--notoSans);
 }
 .services-list{
-    display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto auto auto;
     column-gap: 22px;
@@ -318,7 +316,6 @@
     font-weight: 700;
     color: var(--themeColor);
     padding-bottom: 7px;
-
 }
 .services-list p{
     font-size: 11px;
@@ -326,13 +323,7 @@
 }
 /* *********************** */
 /* Gallery section */
-#gallery{
-    width: 80%;
-    padding: 48px 0px 48px 0px;
-    margin: 0px auto;
-}
 .gallery-images{
-    display: grid;
     grid-template-columns: 1fr;
     column-gap: 35px;
     margin-top: 5%;
@@ -342,20 +333,117 @@
     border-radius: 12px;
 }
 .gallery-img-list{
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     margin-top: 12px;
 }
-
 .gallery-img-list img{
     width: 100%;
     border-radius: 12px;
-
 }
-
+/* Gallery user section */
+/* *********************** */
+#gallery-user-content{
+    background: #F8F8F8;
+}
+#gallery-user-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#gallery-user-container h2{
+    font-size: 34px;
+    font-family: var(--Garamond);
+    font-weight: 600;
+    height: 6vh;
+}
+#gallery-user-img{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+#gallery-user-img li img{
+    width: 50px;
+}
+#gallery-user-comment{
+    font-family: var(--notoSans);
+    position: relative;
+}
+.user-comment-2,
+.user-comment-3{
+    position: absolute;
+    top: 0;
+}
+#gallery-user-comment div{
+    width:max-content;
+    margin: 0px auto;
+    padding-bottom: 5%;
+}
+#gallery-user-comment h5{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 1%;
+}
+#gallery-user-comment img{
+    width: 14vw;
+}
+.user-filter {
+    opacity: 0.5;
+}
+.comment-filter{
+    display: none;
+}
+#gallery-user-comment span{
+    display: inline-block;
+    font-size: 12px;
+    padding: 5% 0px;
+}
+#gallery-user-comment li p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170.2%;
+}
+/* *********************** */
+/* contact page section */
+.contact-container{
+    width: 100%;
+}
+.input-section{
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+    padding: 5px 20px;
+    background-color: #F8F8F8;
+}
+.input-section input{
+    border: none;
+    background: none;
+}
+#input-box{
+    width: 70%;
+    height: 5vh;
+    font-size: 11px;
+    opacity: 0.5;
+    outline: none;
+}
+#submitBtn{
+    background-color: var(--themeColor);
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
+    font-size: 11px;
+    padding: 8px 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 28%;
+    right: 12%;
+}
+/* *********************** */
 /* footer */
 footer{
     background-image: url(/src/images/footerImage.png);
@@ -366,6 +454,7 @@ footer{
 #footerContainer{
     padding: 39px 42px 20px 42px;
     font-family: var(--notoSans);
+    font-weight: lighter;
     color: var(--general-font-color);
 }
 #webpageLogo{
@@ -382,7 +471,6 @@ footer{
     padding-right: 5%;
     font-size: 14px;
 }
-
 #followUs {
     display: flex;
     flex-direction: row;
@@ -393,6 +481,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     padding-top: 10%;
     font-family: var(--notoSans);
+    font-weight: lighter;
 }
 #footerBottom ul li{
     font-size: 12px;
@@ -403,11 +492,18 @@ footer{
     padding-bottom: 12%;
 }
 
-
-
-
-
 @media (min-width:780px) {
+    /* container width */
+    #headerTop,
+    #homePageTitle,
+    #user-comment-section,
+    #footerContainer,
+    .services-box,
+    #destination,
+    #gallery,
+    #contact {
+        width: 70%;
+    }
     #pageHeader {
         background-image: url(../src/images/Bg\ image-window.png);
     }
@@ -417,7 +513,6 @@ footer{
     }
     /* home page header */
         #headerTop{
-        width: 75%;
         margin: 0px auto;
         }
     #headerTop p {
@@ -450,7 +545,6 @@ footer{
     } 
     /* home page content */
     #homePageTitle{
-        width: 70%;
         margin: 16vh auto 0px auto;
     }
     #homePageTitle p:nth-child(1) {
@@ -475,7 +569,6 @@ footer{
     }
     /* user comment section */
     #user-comment-section {
-        max-width: 70%;
         margin: 14vh auto 0px auto;
         padding: 0px 3px;
     }
@@ -501,18 +594,18 @@ footer{
         height: 52px;
     }
     #homePageBottom {
-        width: 76%;
-        margin: 4vh auto 0px auto;
+        width: 72%;
+        margin: 4vh auto 0vh auto;
     }
     .vertical-line {
-        padding-bottom: 2%;
+        padding-bottom: 0%;
     }
     #slogan {
         flex-direction: row;
         font-size: 13px;
     }
     #slogan span {
-        padding: 2px 10px;
+        padding: 0px 10px;
     }
     #social-icon img {
         width: 38px;
@@ -520,7 +613,6 @@ footer{
     }
     /* main content */
     #destination {
-        max-width: 65%;
         padding: 48px 0px 45px 0px;
     }
     .top-content{
@@ -536,13 +628,14 @@ footer{
     }
     .destination-box h4,
     .services-box h4,
-    .gallery-box h4 {
+    .gallery-box h4,
+    .contact-box h4 {
         font-size: 18px;
     }
-    .destination-text-content {
+    .text-content {
         font-size: 20px;
     }
-    .destination-box .vertical-line {
+    .destination-box .vertical-line{
         margin-bottom: 40px;
     }
     /* *********************** */
@@ -576,8 +669,10 @@ footer{
         background: #F8F8F8;
     }
     .services-box {
-        max-width: 65%;
         margin: 0px auto;
+    }
+    .services-box .vertical-line{
+        margin-bottom: 70px;
     }
     .services-container {
         margin: 38px 0px;
@@ -621,9 +716,7 @@ footer{
     }
     /* *********************** */
     /* Gallery section */
-   
     #gallery {
-        max-width: 65%;
         padding: 48px 0px 15vh 0px;
         margin: 0px auto;
     }
@@ -646,10 +739,72 @@ footer{
         width: 100%;
         border-radius: 12px;
     }
-
-
-
-
+    /* Gallery user section */
+    /* *********************** */
+    #gallery-user-container{
+        margin-bottom: 3%;
+    }
+    #gallery-user-container h2 {
+        font-size: 64px;
+        height: 12vh;
+        padding: 3% 0px 0px 0px;
+    }
+    #gallery-user-img {
+        width: 25%;
+        justify-content: space-between;
+    }
+    #gallery-user-img li img {
+        width: 90px;
+    }
+    #gallery-user-comment div {
+        padding-bottom: 2%;
+    }
+    .user-comment-2,
+    .user-comment-3 {
+        position: absolute;
+        top: 0;
+    }
+    #gallery-user-comment h5 {
+        font-size: 22px;
+    }
+    #gallery-user-comment img {
+        width: 5vw;
+    }
+    #gallery-user-comment span {
+        display: inline;
+        font-size: 18px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #gallery-user-comment li p {
+        font-size: 18px;
+        width: 40%;
+        margin: 0px auto;
+        font-weight: 400;
+        line-height: 165%;
+    }
+    /* contact page section */
+    .contact-container {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .contact-box .vertical-line{
+        margin-bottom: 70px;
+    }
+    .input-section {
+        padding: 5px 25px;
+        margin-bottom: 5%;
+    }
+    #input-box {
+        height: 7vh;
+        font-size: 17px;
+    }
+    #submitBtn {
+        font-size: 14px;
+        padding: 15px 25px;
+        top: 22%;
+        right: 4%;
+    }
     /* footer */
     footer{
         background-image: url(/src/images/footerImage-windowsize.png);
@@ -659,34 +814,27 @@ footer{
         padding: 59px 0px 20px 0px;
         display: grid;
         grid-template-columns: 5fr 3fr ;
-        width: 78%;
         margin: 0px auto;
     }
-   
     #webpageLogo {
         padding-bottom: 5%;
         font-size: 26px;
     }
-    
     #footerTextContent {
         font-size: 16px;
         width: 42%;
         padding-bottom: 5%;
     }
-    
     #followUs span {
         font-size: 18px;
     }
     #footerBottom {
         padding-top: 4%;
     }
-    
     #footerBottom ul li {
         font-size: 16px;
     }
-
     #footerBottom ul li:nth-child(1) {
         font-size: 18px;
     }
-
 }

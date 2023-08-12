@@ -72,18 +72,18 @@
       </div>
     </section>
     <main id="mainContainer">
-      <section id="destination">
+      <section id="destination" class="section-padding">
         <div class="destination-box">
           <div class="top-content">
             <h4>1. Destinations</h4>
-            <p class="destination-text-content">Embarking on outdoor adventures and exploring the wonders of nature that awakens our senses and feeds our curiosity.</p>
+            <p class="text-content">Embarking on outdoor adventures and exploring the wonders of nature that awakens our senses and feeds our curiosity.</p>
           </div>
           <div class="vertical-line"></div>
-          <div class="destination-card-container">
+          <div class="destination-card-container grid">
             <!-- card one content -->
             <div class="destination-card">
               <img src="/src/images/Banff town.png" alt="Banff town" />
-              <div class="destination-card-content">
+              <div class="destination-card-content grid">
                 <div class="card-text-content">
                   <h5>Banff Town</h5>
                   <div class="card-rate"><i class="fa-solid fa-star"></i><span>4.7</span></div>
@@ -116,11 +116,11 @@
           </div>
         </div>
       </section>
-      <section id="services">
+      <section id="services" class="section-padding">
         <div class="services-box">
           <div class="top-content">
             <h4>2. Services</h4>
-            <p class="destination-text-content">We provide wide range of travel benefits, enhance the travel experience by providing convenience, expertise, and a range of services.</p>
+            <p class="text-content">We provide wide range of travel benefits, enhance the travel experience by providing convenience, expertise, and a range of services.</p>
           </div>
           <div class="vertical-line"></div>
           <div class="services-container">
@@ -136,7 +136,7 @@
               </li>
             </ul>
             <ul>
-              <li class="services-list">
+              <li class="services-list grid">
                 <div>
                   <img src="/src/images/Services-Icon1.png" alt="Services-Icon-Camera" />
                 </div>
@@ -167,18 +167,18 @@
           </div>
         </div>
       </section>
-      <section id="gallery">
+      <section id="gallery" class="section-padding">
         <div class="gallery-box">
           <div class="top-content">
             <h4>3. Gallery</h4>
-            <p class="destination-text-content">Our gallery is a must-visit for explorers and traveler seeking unique outdoor experiences. Come and discover our newest gallery.</p>
+            <p class="text-content">Our gallery is a must-visit for explorers and traveler seeking unique outdoor experiences. Come and discover our newest gallery.</p>
           </div>
           <div class="vertical-line"></div>
-          <div class="gallery-images">
+          <div class="gallery-images grid">
             <ul class="gallery-hero-img">
               <li><img src="src/images/Gallery-hero.png" alt="" /></li>
             </ul>
-            <ul class="gallery-img-list">
+            <ul class="gallery-img-list grid">
               <li><img src="src/images/Gallery-list1.png" alt="" /></li>
               <li><img src="src/images/Gallery-list2.png" alt="" /></li>
               <li><img src="src/images/Gallery-list3.png" alt="" /></li>
@@ -187,7 +187,57 @@
           </div>
         </div>
       </section>
-      <section id="contact"></section>
+      <section id="gallery-user-content" class="section-padding">
+        <div id="gallery-user-container">
+          <h2>What People Says</h2>
+          <ul id="gallery-user-img">
+            <li><img src="src/images/Gallery-user-2.png" alt="" class="user-filter" /></li>
+            <li><img src="src/images/Gallery-user-1.png" alt="" /></li>
+            <li><img src="src/images/Gallery-user-3.png" alt="" class="user-filter" /></li>
+          </ul>
+          <ul id="gallery-user-comment">
+            <li class="user-comment-1">
+              <h5>Jim Lytton</h5>
+              <div>
+                <img src="src/images/Star rate.png" alt="" />
+                <span> 4.7</span>
+              </div>
+              <p>"A true natural masterpiece! Banff National Park's stunning landscapes, from the emerald lakes to the majestic peaks, left me speechless. It's like stepping into a postcard."</p>
+            </li>
+            <li class="user-comment-2 comment-filter">
+              <h5>Harvey Ruskin</h5>
+              <div>
+                <img src="src/images/Star rate.png" alt="" />
+                <span> 4.8</span>
+              </div>
+              <p>"A true natural masterpiece! Banff National Park's stunning landscapes, from the emerald lakes to the majestic peaks, left me speechless. It's like stepping into a postcard."</p>
+            </li>
+            <li class="user-comment-3 comment-filter">
+              <h5>Hedda Nelly</h5>
+              <div>
+                <img src="src/images/Star rate.png" alt="" />
+                <span> 4.5</span>
+              </div>
+              <p>"A true natural masterpiece! Banff National Park's stunning landscapes, from the emerald lakes to the majestic peaks, left me speechless. It's like stepping into a postcard."</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact" class="section-padding">
+        <div class="contact-box">
+          <div class="top-content">
+            <h4>4. Contact</h4>
+            <p class="text-content">We aim to enhance the travel experience by providing convenience, expertise, and a range of services that cater to the diverse needs and preferences of traveler.</p>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="contact-container">
+            <div class="input-section">
+              <input type="text" id="input-box" placeholder="Enter your email address" />
+              <input type="submit" id="submitBtn" value="Register" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div id="footerContainer">
