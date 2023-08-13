@@ -449,7 +449,7 @@ footer{
     background-image: url(/src/images/footerImage.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 46vh;
+    height: auto;
 }
 #footerContainer{
     padding: 39px 42px 20px 42px;
@@ -476,12 +476,18 @@ footer{
     flex-direction: row;
     align-items: center;
 }
+
 #footerBottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: 10%;
     font-family: var(--notoSans);
     font-weight: lighter;
+}
+#footerBottom div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10%;
 }
 #footerBottom ul li{
     font-size: 12px;
@@ -808,12 +814,13 @@ footer{
     /* footer */
     footer{
         background-image: url(/src/images/footerImage-windowsize.png);
-        height: 35vh;
+        height: auto;
     }
     #footerContainer {
-        padding: 59px 0px 20px 0px;
+        padding: 59px 0px 45px 0px;
         display: grid;
-        grid-template-columns: 5fr 3fr ;
+        grid-template-columns: 3fr 4fr;
+        align-items: center ;
         margin: 0px auto;
     }
     #webpageLogo {
@@ -822,14 +829,20 @@ footer{
     }
     #footerTextContent {
         font-size: 16px;
-        width: 42%;
+        width: 75%;
         padding-bottom: 5%;
     }
     #followUs span {
         font-size: 18px;
     }
     #footerBottom {
-        padding-top: 4%;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-top: 0%;
+    }
+    #footerBottom div {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0%;
     }
     #footerBottom ul li {
         font-size: 16px;
