@@ -34,3 +34,22 @@ window.addEventListener("resize", function(){
         closeBtn.style.display = "none"
     }
 })
+
+
+// footer submit
+let submitBtn = document.getElementById("submitBtn").addEventListener("click", _validateEmail)
+var input = document.getElementById("input-box");
+
+function _validateEmail(){
+
+    var mailFormat =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (input.value.match(mailFormat)) {
+        alert("We will contact you as soon as possible 👋");
+    }else if(input.value === ""){
+         alert("Please input your email address 🥸");
+    }else{
+        alert("Please input your email address 🥸");
+        document.getElementById("input-box").value = "";
+    }
+}
