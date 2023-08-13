@@ -476,7 +476,16 @@ footer{
     flex-direction: row;
     align-items: center;
 }
-
+#codeLink{
+    font-size: 12px;
+    max-width: 85%;
+    margin-top: 5%;
+    line-height: 168%;
+}
+#codeLink a{
+    text-decoration: none;
+    color: var(--themeColor);
+}
 #footerBottom {
     display: grid;
     grid-template-columns: 1fr;
@@ -834,6 +843,10 @@ footer{
     }
     #followUs span {
         font-size: 18px;
+    }
+    #codeLink {
+        font-size: 14px;
+        max-width: 65%;
     }
     #footerBottom {
         grid-template-columns: 1fr 1fr;
